@@ -1,0 +1,1732 @@
+/*navbar*/
+.topnav {
+    overflow: hidden;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    float: right;
+    width: 100%;
+    position:relative;
+    top: 0;
+    background-color:white;
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 3px;
+  margin-right: 2px;
+}
+
+.topnav ul {
+  margin-right: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap:wrap;
+
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid transparent;
+  border-bottom-color:#aa0082;
+  text-shadow: 0 0 0.8px black;
+  transition: ease 0.2s;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid transparent;
+  border-bottom-color:#aa0082;
+  text-shadow: 0 0 0.8px black;
+}
+
+.topnav input[type=text] {
+  color: black;
+  padding: 6px 10px 6px 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #aa0082; 
+  border-radius: 50px;
+  margin-top: 8px;
+  margin-right: 20px;
+  font-size: 17px;
+}
+.vl {
+  border-left: 1px solid black;
+  height: 100%;
+  margin-right: 7px;
+  margin-left: 5px;
+}
+.logo {
+    height: 20%;
+    width: 20%;
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 3px;
+    float: left;
+}
+
+/*footer*/
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding-top: 10px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 19px;
+    width: auto;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    text-decoration-color: #aa0082;
+    color: #aa0082;
+    transition: 0.5s;
+    
+}
+.lists{
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+}
+
+footer ul{
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+footer a{
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-bottom{
+    background-color: #383838;
+    padding: 10px;
+    padding-bottom: 0.1px;
+    text-align: center;
+    font-family:sans-serif;
+    margin-top: -9px;
+    width: auto;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 1px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*Mohamed Ahmed Mostafa 167348*/
+/*body*/
+
+
+body {
+    background-color: white;
+    margin-right: 0;
+    margin-left: 0;
+    
+}
+
+/*cover*/
+
+.covercontent{
+    display: inline-flex;
+}
+
+.covercontent h1 {
+    color: #aa0082;
+    float: right;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.coverimg{
+    width: 58%;
+    height: 58%;
+    margin-left: 25px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+            opacity: 100%;
+        }
+}
+
+.covertext{
+    width: 35%;
+    margin-left: 30px;
+    margin-top: 80px;
+    font-family: 'Archivo Black', sans-serif;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
+}
+
+
+@keyframes slideInRight {
+        0% {
+          transform: translateX(100%);
+            opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+            opacity: 100%;
+        }
+}
+
+@keyframes RevealOnScroll {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 100%;
+        }
+}
+.coverbuttons{
+    display: flex;
+    position: relative;
+    width: 300px;
+}
+
+/*first body div*/
+
+.topcategories{
+    background-color: #fff2df;
+    height: 520px;
+}
+
+.topcategories h2{
+    font-family: 'Archivo Black', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+    text-align: center;
+    color: #aa0082;
+}
+.categoriescontainer{
+  display:flex;
+  grid-gap: 40px;
+  margin-left: auto;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-right: auto;
+  z-index: 0;
+  position: relative;
+}
+
+.box{
+    border-style: solid;
+    background-color: #f5f5f5;
+    border-width:0px;
+    border-radius: 30px;
+    border-color: black;
+    box-sizing: border-box;
+    width: 280px;
+    height: 280px;
+    margin:5px;
+    padding:5px;
+    box-shadow:  0 0 15px rgb(235 212 170 / 100%);
+}
+
+.box:hover{
+    box-shadow:  0 0 50px rgb(235 212 170 / 100%);
+    transition: ease 0.35s;
+    cursor: pointer;
+}
+
+.box img{
+        width: 80%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.box h4{
+    text-align: center;
+    color: #aa0082;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.button{
+  background-color: white;
+  border-style: solid;
+  border-radius: 50px;
+  border-width: 2px;
+  border-color:#aa0082; 
+  color: #aa0082;
+  padding: 15px 32px;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor:pointer;
+  width:150px;
+  transition: ease 0.35s;
+  font-family: 'Bebas Neue', cursive;
+}
+.button:hover{
+    background: #aa0082;
+    color: white;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active.fade-left {
+  animation: slideInLeft 1s ease-in;
+}
+
+.active.fade-right {
+  animation: slideInRight 1s ease-in;
+}
+.active.reveal-scroll{
+    animation: RevealOnScroll 1s ease-in;
+}
+/*second body div*/
+
+.homeaboutus {
+    background-color: white;
+    height: 520px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.homeaboutus h2{
+    margin-top: 70px;
+    color: #aa0082;
+    font-size: 40px;
+    margin-left: 30px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.homeaboutus p{
+    color: black;
+    font-size: 22px;
+    width: 90%;
+    margin-left: 30px;
+    line-height: 45px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+.homeaboutus img{
+    width: 50%;
+    height: 100%;
+    
+}
+
+
+
+
+/*FAQs*/
+
+.faqtitle{
+    font-family: 'Archivo Black', sans-serif;
+    color: #aa0082;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.allcollaps{
+    margin-top: 5%;
+}
+.collapcont{
+    margin-bottom:30px;
+    
+}
+
+.collapsible {
+  background-color: white;
+  color: #aa0082;
+  cursor: pointer;
+  padding: 18px 30px;
+  width: 80%;
+  border-style: solid;
+  border-color: #aa0082;
+  border-width: 2px;
+  border-radius: 40px;
+  text-align: left;
+  font-size: 18px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+  box-shadow:  0 0 15px rgb(0 0 0 / 20%);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.collapsible:active{
+  background-color: #aa0082;
+  color: white;
+} 
+
+.collapsible:hover {
+  background-color: #aa0082;
+  color: white;
+  transition: 0.35s ease;
+}
+
+
+.collapsiblecontent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  width: 79.6%;
+  border-bottom-left-radius:30px;
+ border-bottom-right-radius: 30px;
+  margin-top: -50px;
+  z-index: -1;
+  position: relative;
+  padding-top: 40px;
+  box-shadow:  0 0 15px  rgb(0 0 0 / 20%);
+  border-style: solid;
+  border-color: #aa0082;
+  border-width: 2px;
+  border-radius: 40px;
+  
+}
+
+.collapsiblecontent p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.collapsible:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #aa0082;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: "\2796";
+}
+
+.faqimgleft{
+    width: 19%;
+    height: 30%;
+    margin-top: 5%;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+.faqimgright{
+    width: 19%;
+    height: 30%;
+    float: right;
+    margin-top: 5%;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
+}
+
+
+/* Mostafa Nassar categories */
+
+
+.topnav .x .drp 
+{
+ display: none;
+ z-index: 3;
+ position: absolute;
+ padding: 14px 16px;
+ top: 75px;
+-webkit-box-shadow: 0 3px 0px #aa0082;
+
+}
+
+.topnav .x .drp li a{
+    padding: 15px;
+    text-decoration: none;
+}
+
+
+  
+.x:hover .drp {
+    display:inline-block;
+}
+
+.container 
+{
+width: 90%;
+overflow: hidden;
+margin: auto ;
+padding: 30px 0px;
+
+}
+.container ul {
+    padding: 0px;
+    margin:0px;
+
+}
+.container ul li 
+{
+   list-style: none;
+   float:left;
+   width: 20%;
+   height: 250px;
+   background-color: rgb(255, 255, 255);
+   margin: 40px 30px 0px; 
+   box-sizing: border-box;
+   border: 2px solid #aa0082;
+   color: black;
+   text-align: center;
+}
+
+
+.container ul li .title
+{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #aa0082;
+    text-align: center;
+    margin-top: 0.5px;
+    color: #fff;
+    font-size: large;
+}
+
+
+
+.container ul li:hover
+{
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .container ul li
+    {
+        width: 40%;
+        margin: 20px;
+
+    }
+}
+.container ul li .title:hover
+{
+background:white ;
+color: black;
+}
+
+.shop-item-image
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; 
+    height: auto;
+}
+
+
+.column {
+    float: left;
+    width: 410px;
+    padding: 0px;
+    margin-left: 145px;
+    margin-top: 100px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .btn-primary {
+    background-color: #aa0082; 
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 25px;
+  }
+  .btn-primary {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #aa0082;
+  }
+  
+  .btn-primary:hover {
+    background-color: #aa0082;
+    color: white;
+  }
+
+ .cartImg
+ {
+width: 200px;
+ }
+
+
+ .cart
+ {
+    width: 250px;
+    float: right;
+    text-align: center;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 100px;
+    padding: 0px 0px 0px;
+ }
+
+ .cart-header {
+    font-weight: bold;
+    font-size: 20px;
+    color: #790C5A;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E6739F;
+    margin-right: 24px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 19px;
+    color: #790C5A;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #CC0E74;
+    margin-left: 9px;
+    font-size: 20px;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    padding: 10px 22px;
+    color: white;
+    background-color: #790C5A;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 250px;
+}
+
+.btn-danger:hover {
+    background-color: red;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #CC0E74;
+    background-color: #F1D4D4;
+    color: #790C5A;
+    padding: 0;
+    text-align: center;
+    font-size: 19px;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid #E6739F;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: red;
+    font-size: 18px;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 28px;
+}
+
+#myDIV {
+    border-radius: 50px;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #F9F9F9;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: none;
+
+  }
+
+  .btn-cart
+  {
+  background-color: #aa0082; 
+  border: none;
+  color: white;
+  padding: 20px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  margin-left: 625px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  
+  }
+  .btn-cart {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #aa0082;
+  }
+  
+  .btn-cart:hover {
+    background-color: #aa0082;
+    color: white;
+  }
+
+  .column1 {
+    float: left;
+    width: 250px;
+    padding: 0px;
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .column2 {
+    
+    float: left;
+    width: 20px;
+    padding: 0px;
+    margin-left: 245px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* .body {
+    font-family: Arial;
+    margin: 0;
+  } */
+  
+  .headercat {
+    padding: 10px 10px;
+    text-align: center;
+    background: #aa0082;
+    color: white;
+    font-size: 30px;
+  }
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+/****************************************************************************************************************************************/
+
+
+
+
+
+
+
+/* Ahmed mohamed Hassan 195141 login design */
+
+
+ .loginf{
+
+    background-image: linear-gradient(135deg, white 10%, white 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #aa0080;
+ }
+
+.box-form {
+    margin: 0 auto;
+    width: 95%;
+    /* background: #FFFFFF; */
+    background: #fff2df;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    /* box-shadow: 0 0 20px 6px #090b6f85; */
+  }
+  @media (max-width: 1000px) {
+    .box-form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .box-form div {
+    height: auto;
+  }
+  .box-form .left {
+    color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url("images/login_1.jpeg");
+    overflow: hidden;
+  }
+  .box-form .left .overlay {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    /* background: #5961f9ad; */
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .box-form .left .overlay h1 {
+    font-size: 10vmax;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 300px;
+  }
+  .box-form .left .overlay span p {
+    margin-top: 30px;
+    font-weight: 900;
+  }
+  .box-form .left .overlay span a {
+    background: #3b5998;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 14px 50px;
+    border-radius: 100px;
+    display: inline-block;
+  }
+  .box-form .left .overlay span a:last-child {
+    background: #1dcaff;
+    margin-left: 30px;
+  }
+  .box-form .right {
+    padding: 70px;
+    overflow: hidden;
+    width: 30%;
+  }
+  
+  .box-form .right h5 {
+    font-size: 5vmax;
+    line-height: 0;
+  }
+  .box-form .right p {
+    font-size: 14px;
+    color: #B0B3B9;
+  }
+  .box-form .right .inputs {
+    overflow: hidden;
+  }
+  .box-form .right input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #b9b2b0;
+    background: #fff2df;
+  }
+  .box-form .right select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #b9b2b0;
+    background: #f8e6cc;
+  }
+  .box-form .right button {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px #aa0080;
+    background-image: linear-gradient(135deg, #aa0080  10%, #FFA500 100%);
+  }
+  
+ 
+
+
+  /* slider sign up ahmed mohamed Hassan 195141 */
+  #slider {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 1000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+   
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+   
+    float: left;
+  }
+  #slider ul li img{
+    width: 987px;
+    height: 1400px;
+  }
+   
+  #slider #prev, #slider #next {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+  }
+  #slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+  }
+  #slider #prev {
+    left: 10px;
+  }
+  #slider #next {
+    right: 10px;
+  }
+/* validation part ahmed mohamed Hassan 195141*/
+.error {       
+  color: red;
+  font-size: 20px !important;
+  position: relative;
+  top: 10px;
+  left: 0;
+ 
+  
+}
+ 
+#successMessage {
+  color: green;
+  font-size: 20px !important;
+  display:none;
+  position: relative;
+  top: -20px;
+  left: 0; 
+}
+ 
+#errorMessage {
+  color: red;
+  font-size:20px !important;
+  display:none;
+  position: relative;
+  top: -20px;
+  left: 40px; 
+  
+}
+
+/* recipes home section ahmed mohamed haassan  */
+.recipes_content{
+    width:100%;
+    overflow: hidden;
+}
+
+.home{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home::before,
+.home::after{
+  content:'';
+  position: absolute;
+  top:5rem; right:-6rem;
+  border-radius: 3rem;
+  transform:rotate(-45deg);
+  height:40rem;
+  width:70rem;
+  z-index: -2;
+  animation: animte 1s linear 1;
+}
+
+@keyframes animte{
+  0%{
+      transform:rotate(45deg) translateY(-40rem);
+  }
+}
+
+.home::before{
+  top:-7rem;
+  background:rgb(189, 136, 238);
+  box-shadow: 0 1rem 4rem rgba(0,0,0,.1);
+  z-index: -1;
+}
+
+.home .image{
+  flex:1 1 39rem;
+}
+
+.home .image img{
+  width:90%;
+}
+
+.home .content{
+  flex:1 1 39rem;
+}
+
+.home .content h3{
+  color:#333;
+  font-size: 6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home .content p{
+  color:#666;
+  font-size: 2rem;
+  padding:1rem 0;
+}
+
+
+
+/* 2nd section recipe ahmed mohamed hassan 195141 */
+
+
+ .top-products {
+  background-color:whitesmoke;
+  
+  
+}
+
+.section-heading{
+  font-family:"Raleway-bold";
+  text-align:center;
+  Position:relative;
+  margin-bottom:6rem;
+ margin-top: auto;
+ 
+}
+
+
+section.top-products .food-slider .food-card{
+ 
+  padding:1.5rem 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: #FEFEFE;
+}
+
+section.top-products .food-slider .food-card .product-image img{
+  width:80%;
+  height:200px;
+  object-fit:contain;
+  padding-bottom:1rem;
+  
+}
+
+section.top-products .food-slider .food-card h2{
+  font-family:"Raleway-bold";
+  font-size:1.3rem;
+  margin-bottom:0.25rem;
+}
+.text-center{
+  text-align: center;
+}
+
+
+.slick-slide{
+  margin:0 27px;
+}
+.slick-list{
+  margin:0 -27px;
+}
+.top-products .slider-btn{
+  width: 30px;
+  height:30px;
+  border: none;
+  background:var(--primary);
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  -ms-border-radius:4px;
+  -o-border-radius:4px;
+  cursor:pointer;
+  outline:none;
+}
+
+.prev-btn{
+  position:absolute;
+  top:46%;
+  left:-3rem;
+  z-index: 1;
+}
+.next-btn{
+  position:absolute;
+  top:46%;
+  right:-3rem;
+  z-index: 1;
+}
+.top-products .slider{
+  position: relative;
+}
+.top-products .btn-wrapper{
+  margin-top:2rem;
+}
+.slick-track{
+  padding:1rem 0;
+}
+section.about-meal img{
+  width:85%;
+}
+
+/* 3rd section recipes  ahmed mohamed hassan 195141 */
+
+ 
+
+.btn_recipes{
+  font-size: 1.7rem;
+  padding:.7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  background:none;
+  color:#333;
+  cursor: pointer;
+  border:.2rem solid var(--yellow);
+}
+
+.btn_recipes:hover{
+  background:var(--yellow);
+}
+.menu{
+  background-color: #FFFAF0;
+  
+}
+
+ .menu h1{
+  font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+}
+.menu .list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding:1rem 0;
+  margin:2rem 0;
+  border-top: .3rem dotted rgba(0,0,0,.2);
+  border-bottom: .3rem dotted rgba(0,0,0,.2);
+}
+
+.menu .list .btn_recipes{
+  margin:1rem;
+}
+
+.menu .list .btn_recipes.active,
+.menu .list .btn_recipes:hover{
+  background:var(--yellow);
+  color:#fff;
+}
+
+.menu .row{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu .row .image{
+  margin:2rem;
+  padding:2rem;
+  flex:1 1 40rem;
+  border-radius: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.menu .row .image img{
+  width:100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.menu .row .content{
+  flex:3 3 40rem;
+}
+
+.menu .row .content .info{
+  padding:1rem 0;
+}
+
+.menu .row .content .info h3{
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color:#333;
+  margin: 0;
+}
+
+.menu .row .content .info h3 span{
+  padding-right: 1rem;
+  color:var(--yellow);
+}
+
+.menu .row .content .info p{
+  padding: 0;
+  padding-left: 0;
+  font-size: 1.5rem;
+  color:#666;
+  margin: 10;
+}
+
+:root{
+  --yellow:rgb(189, 136, 238);
+}
+
+/* admin pages ahmed mohamed hassan  159141*/
+
+
+
+
+.animate-top{
+  position:relative;
+  animation:animatetop 0.4s
+}
+
+
+.modal-content {
+  margin: 8% auto;
+  border: 1px solid #888;
+  width: 475px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+.modal-header {
+    
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    margin-top: 0;
+}
+.modal-title h5{
+    font-size: 1.25rem;
+    color: #666;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+    cursor: pointer;
+}
+
+
+.modal-body {
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.modal-body p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.modal-footer {
+   
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+.btn_admin {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.btn-admin-p {
+    color: #fff;
+    background-color: #07a8ff;
+    border-color: #07a8ff;
+    display: block;
+    margin: 0 auto;
+}
+.btn-admin-p:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.btn_admin:focus, .btn_admin:hover {
+    text-decoration: none;
+}
+
+.form-control {
+    display: block;
+    width: 95%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+   
+}
+
+/************************************************************************************************************************************************** */
+
+/* Mostafa Amin Fekry 188027 About US Part */
+
+#scroll-top {
+  text-align: center;
+  padding: 15px;
+  background-color: #777;
+  color: #FFF;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  cursor: pointer;
+  display: none
+}
+
+#scroll-top:hover {
+  background-color: #444
+}
+
+.font 
+{
+  background-color: #edffef;
+  padding-left: 600px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: opensans;
+  color: #aa0082;
+}
+
+.font1 
+{
+  padding-left: 600px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: opensans;
+  color: #aa0082;
+}
+
+
+
+.newsimg
+{
+
+  width:400px;
+  height:300px;
+
+}
+
+.latest1 
+{
+  margin-top: 350px;
+  padding-top: 16%;
+  background-color: lightgray;
+  padding-bottom: 5%;
+  padding-left: 7%;
+}
+
+.latest 
+{
+  background-color: #edffef;
+  margin-bottom: 150px;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+.row 
+{
+  display: flex;
+  margin-left:50px;
+  
+}
+
+.columnV
+{
+  margin-right:150px;
+}
+
+.columnVi 
+{
+  margin-right: 45px;
+}
+
+.video 
+{
+  width: 370px;
+  height:250px;
+  
+}
+
+.tr 
+{
+  position:sticky;
+  margin-left:25%;
+  font-size: large;
+  font-weight: 600;
+}
+
+.tr1 
+{
+  color: #080808;
+  position: relative;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 600;    
+}
+
+.more 
+{
+  text-transform: capitalize;
+  cursor: pointer;
+  background-image: none;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  white-space: normal;
+  transition: all .3s;
+  padding: 15px 28px;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 0;
+  box-shadow: 0 2px 5px 0;
+  margin: 5px;
+  background-color: #aa0082;
+  border-color: transparent;
+  color:aliceblue;
+  margin-left: 40%;
+  margin-top:4%;
+}
+.more2 
+{
+  text-transform: capitalize;
+  cursor: pointer;
+  background-image: none;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  white-space: normal;
+  transition: all .3s;
+  padding: 15px 28px;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 0;
+  box-shadow: 0 2px 5px 0;
+  margin: 5px;
+  background-color: #aa0082;
+  border-color: transparent;
+  color:aliceblue;
+  margin-left: 39%;
+  margin-top:4%;
+}
+
+/* Mostafa Amin Fekry 188027 Contact US Part */
+
+.cntform {
+	padding: 2rem 9%;
+  }
+  
+  .heading {
+	text-align: center;
+	padding-bottom: 2rem;
+  }
+  
+  .heading span {
+	font-family: 'Satisfy', cursive;
+	font-size: 2rem;
+	color: #aa0082;
+  }
+  
+  .heading h3 {
+	font-size: 2rem;
+	color: #130f40;
+  }
+  
+  .bttn {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: .7rem 1.8rem;
+	font-size: 1.7rem;
+	cursor: pointer;
+	color: #fff;
+	background: #aa0082;
+	border-radius: .5rem;
+  }
+  
+  .bttn:hover {
+	background: #130f40;
+  }
+  
+  
+  .order .icons-container {
+	display: -moz-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(10rem, 1fr)) [auto-fit];
+	grid-template-columns:  repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+  }
+  
+  .order .icons-container .icons {
+	border-radius: .5rem;
+	padding: 2rem;
+	text-align: center;
+	background: #f7f7f7;
+  }
+  
+  .order .icons-container .icons img {
+	height: 7rem;
+  }
+  
+  .order .icons-container .icons h3 {
+	font-size: 2rem;
+	color: #130f40;
+	margin-top: .5rem;
+  }
+  
+  .order form {
+	background: #f7f7f7;
+	padding: 1rem;
+	border-radius: .5rem;
+  }
+  
+  .order form .flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+  }
+  
+  .order form .flex .inputBox {
+	width: 49%;
+	padding: .5rem 0;
+  }
+  
+  .order form .flex span {
+	font-size: 1rem;
+	color: #666;
+  }
+  
+  .order form .flex input, .order form .flex textarea {
+	width: 100%;
+	margin-top: .5rem;
+	padding: 1rem 1.2rem;
+	width: 100%;
+	border-radius: .5rem;
+	font-size: 1.4rem;
+	text-transform: none;
+	color: #130f40;
+  }
+  
+  .order form .flex textarea {
+	height: 20rem;
+	resize: none;
+  }
+  
+  .order form .flex .map {
+	height: 100%;
+	width: 100%;
+	border-radius: .5rem;
+  }
+
+
+
+
+
+
+
